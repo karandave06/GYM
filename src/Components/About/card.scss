@@ -1,0 +1,44 @@
+@import '../../index.scss';
+
+.card{
+    flex: 0 0 33.33;
+    max-width: 33.33%;
+    padding: 14px;
+
+    @include tab{
+    max-width: 60.33%;
+
+    }
+
+    @include Mobile-M{
+        max-width: 100%;
+    }
+
+
+    .inner{
+
+        
+        background-color: #222222;
+        color: white;
+        
+        .img{
+            img{
+                width: 100%;
+            }
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 20px 10px 30px;
+            p{
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,141 @@
+@import '../../index.scss';
+
+.classes{
+
+    padding: 80px 0px 50px;
+
+
+
+    .content{
+
+        display: flex;
+
+        @include tab{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            padding: 15px;
+            flex: 0 0 50%;
+            max-width: 50%;
+
+            @include tab{
+                max-width: 75%;
+            }
+            @include  Mobile{
+                max-width: 90%;
+            }
+            @include Mobile-M{
+                max-width: 100%;
+            }
+        }
+
+
+        .box-img{
+            height: 500px;
+            width: auto;
+
+            img{
+
+                transform: rotateY(180deg);
+
+            }
+      
+        }
+
+        .text-box{
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+                color: #000000;
+                padding: 0px 0px 20px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 20px;
+                color: #222222;
+                margin: 0;
+                padding: 0 0 30px;
+                    font-family: 'Open Sans', sans-serif;
+            }
+
+
+        
+
+        .item{
+           margin-bottom: 5rem;
+            display: flex;
+
+            @include Mobile-M{
+                flex-direction: column;
+            }
+
+            .item-text{
+                flex: 0.5;
+                color: #ffffff;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                @include Mobile-M{
+                    flex: 1;
+                }
+
+
+                h4{
+                    font-size: 20px;
+                    margin: 0;
+                    padding: 0px 0px 15px;
+                    font-weight: 500;
+                    color: #ffffffff;
+                    text-align: left;
+                    text-transform: capitalize;
+                }
+
+               p{
+                font-size: 14px;
+                line-height: 20px;
+                color: #ffffff;
+                margin: 0 0 15px;
+                font-family: 'Oswald', sans-serif;
+                padding: 0 0 20px;
+                text-align: left;   
+                }
+            }
+
+            .item-img{
+                height: 300px;
+                width: auto;
+                flex: 0.5;
+
+                @include Mobile-M{
+                    flex: 1;
+                }
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    // display: block;
+                }
+            }
+
+            &:nth-child(1){
+    background: #222222;
+
+            }
+
+            &:nth-child(2){
+                background: #c11325;
+            
+                        }
+
+        }
+
+    }
+    }
+
+}

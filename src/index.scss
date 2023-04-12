@@ -1,0 +1,52 @@
+
+
+$oswald: 'Oswald', sans-serif;
+$roboto:'Roboto', sans-serif;
+$popins:'Poppins', sans-serif;
+
+
+
+@mixin tab{
+    @media screen and (max-width:768px){
+        @content
+    }
+}
+
+@mixin Mobile{
+    @media screen and (max-width: 550px){
+        @content
+    }
+}
+
+
+@mixin Mobile-M{
+    @media screen and (max-width: 425px){
+        @content
+    }
+}
+
+@mixin Mobile-375{
+    @media screen and (max-width:375px){
+        @content
+    }
+}
+
+
+.btn{
+    color: white;
+    font-size: 18px;
+    background-color: #222222;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all .5s ease;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+}
+
+.btn:hover{
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #fff;
+}

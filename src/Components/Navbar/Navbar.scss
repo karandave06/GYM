@@ -1,0 +1,77 @@
+@import '../../index.scss';
+.navbar{
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+}
+
+nav{z-index: 100;
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: black;
+    color: white;
+
+    #toggle{
+        z-index: 99999;
+    }
+  
+    .logo{
+        h1{
+            font-size: 2.1rem;
+            font-weight: 700;
+
+      @include Mobile-M{
+        font-size: 1.5rem;
+        font-weight: 500;
+
+
+      }
+
+            span{
+                color: red;
+            }
+        }
+    }
+
+    ul{
+        li{
+            display: block;
+            a{
+                  font-size: 20px;
+                  font-weight: 400;
+                  display: block;
+                  position: relative;
+                //   padding: 10px 30px;
+            }
+        }
+    }
+
+    #resmenu{
+
+        z-index: 99;
+
+        background-color: #c11325;
+        transition: .3s ease-in-out;
+        
+        
+                padding:90px 0px 15px;
+
+
+                li{
+                    padding: 5px 2rem;
+
+                    a{
+                        font-size: 18px;
+                    }
+                }
+        
+    }
+
+
+
+
+   
+}
