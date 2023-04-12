@@ -41,7 +41,7 @@ const Navbar = () => {
 
 
             <li>
-                  <a href="home">Home</a>
+                  <a href="#price">Price</a>
             </li>
 
             <li>
@@ -61,7 +61,7 @@ const Navbar = () => {
 
     {/* Responsive design */}
     <ul id='resmenu' className={` bg-black text-white md:hidden fixed 
-    right-0 top-0 flex gap-5 flex-col h-full w-[210px]   ${toggle ? `right-0` : `right-[-100%]`}`}>
+    right-0 top-0 flex gap-5 flex-col h-full w-[280px] justify-start items-start   ${toggle ? `right-0` : `right-[-100%]`}`}>
             <li>
                   <a  onClick={()=>settoggle(!toggle)} href="#header">Home</a>
             </li>
@@ -84,7 +84,7 @@ const Navbar = () => {
 
 
             <li>
-                  <a  onClick={()=>settoggle(!toggle)} href="home">Home</a>
+                  <a  onClick={()=>settoggle(!toggle)} href="#price">Price</a>
             </li>
 
             <li>

@@ -6,6 +6,7 @@ import About from './Components/About/About'
 import Services from './Components/Services/Services'
 import Class from './Components/Classes/Class'
 import Shadule from './Components/Shadule/Shadule'
+import Price from './Components/Price/Price'
 
 
 
@@ -21,6 +22,7 @@ function App() {
     <Services />
     <Class />
     <Shadule />
+    <Price />
 
 
  

@@ -1,0 +1,98 @@
+@import '../../../index.scss';
+
+.card{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+
+    @include tab{
+        max-width: 60%;
+    }
+
+    @include Mobile{
+        max-width: 80%;
+    }
+
+    @include Mobile-M{
+        max-width: 100%;
+    }
+
+    .title{
+      padding: 15px;  
+      font-size: 24px;
+      background-color: #c11325;
+      color: #ffffff;
+      text-align: center;
+      font-weight: 700;
+      width: 100%;
+
+      @include Mobile{
+        font-size: 18px;
+    }
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .content{
+        text-align: center;
+        h3{
+            font-size: 20px;
+            color: #222222;
+            margin: 0;
+            padding: 0 0 20px;
+            font-weight: 500;
+
+            // @include Mobile{
+            //     font-size: 12px;
+            // }
+        }
+
+        h1{
+            font-size: 17px;
+            line-height: 20px;
+            color: #222222;
+            margin: 0 20px 15px;
+            padding: 0 0 10px;
+            text-align: left;
+            text-align: center;
+
+            @include Mobile{
+                font-size: 12px;
+            }
+        }
+
+        .btn-text{
+            color: white;
+            background-color: #c11325;
+            padding:  8px 30px;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid transparent;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            &:hover{
+                border: 1px solid #c11325;
+                background: transparent;
+                 color: #000;
+
+            }
+            
+
+        }
+    }
+
+
+}

@@ -1,0 +1,61 @@
+@import '../../index.scss';
+
+.price{
+    padding: 30px 80px;
+
+    @include tab{
+        padding: 25px 60px;
+    }
+
+    @include Mobile{
+        padding: 45px;
+    }
+
+
+    .price-text{
+        text-align: center;
+
+        h1{
+            font-size: 30px;
+            font-weight: 500;
+            color: #000000;
+            padding: 0px 0px 20px;
+
+            @include tab{
+                font-size: 25px;
+            }
+
+            @include Mobile-375{
+                font-size: 20px;
+            }
+        }
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #222222;
+            margin: 0 20px 15px;
+            font-family: 'Oswald', sans-serif;
+            padding: 0 0 50px;
+
+            @include tab{
+                font-size: 11px;
+            }
+
+            @include Mobile-375{
+                font-size: 8px;
+                line-height: 12px;
+            }
+        }
+    }
+
+    .item-container{
+        display: flex;
+
+        @include tab{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+}
