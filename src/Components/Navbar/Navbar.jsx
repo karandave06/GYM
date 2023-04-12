@@ -36,7 +36,7 @@ const Navbar = () => {
             </li>
 
             <li>
-                  <a href="home">Home</a>
+                  <a href="#shadule">Shedule</a>
             </li>
 
 
@@ -79,7 +79,7 @@ const Navbar = () => {
             </li>
 
             <li>
-                  <a  onClick={()=>settoggle(!toggle)} href="home">Home</a>
+                  <a  onClick={()=>settoggle(!toggle)} href="#shadule">Shedule</a>
             </li>
 
 

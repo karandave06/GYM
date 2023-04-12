@@ -31,6 +31,12 @@ $popins:'Poppins', sans-serif;
     }
 }
 
+@mixin Mobile-325{
+    @media screen and (max-width:325px){
+        @content
+    }
+}
+
 
 .btn{
     color: white;

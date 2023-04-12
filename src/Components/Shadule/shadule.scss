@@ -1,0 +1,80 @@
+@import '../../index.scss';
+
+.shadule{
+    padding: 100px;
+
+
+    @include Mobile{
+        padding: 30px;
+    }
+    @include Mobile-M{
+        padding:20px;
+    }
+
+    .content{
+        display: flex;
+
+        @include tab{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box{
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 20px;   
+            
+            @include tab{
+                max-width: 100%;
+            }
+
+            @include Mobile{
+                flex: 0 0 100%;
+            }
+        }
+        .text{
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+                color: #000000;
+                padding: 0 0 30px;
+
+
+                @include Mobile-375{
+                    font-size: 15px;
+                }
+
+                @include Mobile-M{
+                    font-size:20px;
+                }
+            }
+
+            p{
+                font-size: 14px;
+                color: #222222;
+                margin: 0 0 15px;
+                font-family: 'Oswald', sans-serif ;
+                padding: 0 0 20px;
+                text-align: left;
+
+                @include Mobile-375{
+                    font-size: 9px;
+                }
+                @include Mobile{
+                    font-size: 12px;
+                }
+
+                @include Mobile-M{
+                    font-size:10px;
+                }
+
+            }
+
+            img{
+                width: 100%;
+                // transform: rotateY(0deg);
+            }
+        }
+    }
+}
