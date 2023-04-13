@@ -7,6 +7,7 @@ import Services from './Components/Services/Services'
 import Class from './Components/Classes/Class'
 import Shadule from './Components/Shadule/Shadule'
 import Price from './Components/Price/Price'
+import Contact from './Components/Contact/Contact'
 
 
 
@@ -23,6 +24,7 @@ function App() {
     <Class />
     <Shadule />
     <Price />
+    <Contact />
 
 
  

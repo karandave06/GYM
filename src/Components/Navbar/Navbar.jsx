@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
 
             <li>
-                  <a href="home">Home</a>
+                  <a href="#contact">Contact</a>
             </li>
         </ul>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
             </li>
 
             <li>
-                  <a  onClick={()=>settoggle(!toggle)} href="home">Home</a>
+                  <a  onClick={()=>settoggle(!toggle)} href="#contact">Contact</a>
             </li>
         </ul>
 
