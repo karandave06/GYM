@@ -10,7 +10,7 @@ const Card = () => {
   
    <div className="title">
     <h1>
-        &69/Month
+    &#8377;2000/Month
     </h1>
 
    </div>
