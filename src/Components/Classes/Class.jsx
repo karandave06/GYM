@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./class.scss";
 import img from "../../../public/classe1.png";
 import img2 from "../../../public/class.jpg";
-
+import Aos from "aos";
+import 'aos/dist/aos.css'
 const Class = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  })
   return (
     <div id="classes" className="classes">
       <div className="container">
         <div className="content">
-          <div className="box-img box">
+          <div className="box-img box" data-aos="fade-up">
             <img src={img} alt="" />
           </div>
 
@@ -24,8 +28,8 @@ const Class = () => {
             </p>
 
             <div className="item-container">
-              <div className="item">
-                <div className="item-img">
+              <div className="item" data-aos="fade-left">
+                <div className="item-img" >
                   <img src={img2} alt="" />
                 </div>
 
@@ -40,7 +44,7 @@ const Class = () => {
                 </div>
               </div>
 
-              <div className="item">
+              <div className="item" data-aos="fade-right">
                 <div className="item-text">
                   <h4>Streatching Traning</h4>
                   <p>
@@ -51,7 +55,7 @@ const Class = () => {
                   <a href="">Get Deails</a>
                 </div>
 
-                <div className="item-img">
+                <div className="item-img" >
                   <img src={img2} alt="" />
                 </div>
               </div>

@@ -9,7 +9,7 @@ const About = () => {
     <div id="about" className='about'>
 
     <div className="container ">
-      <div className="content justify-center items-center flex flex-col md:flex-row">
+      <div className="content justify-center items-center flex flex-col md:flex-row gap-5">
 
         <Card img={img} title="Best Traning" />
 
