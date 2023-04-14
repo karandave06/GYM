@@ -70,6 +70,16 @@ font-size: 15px;
                 font-size: 10px;
             }
 
+            @include Mobile-375{
+                font-size: 8px;
+                line-height: 20px;
+            }
+
+            @include Mobile-325{
+                font-size: 7px;
+                line-height:18px;
+            }
+
         }
     }
 

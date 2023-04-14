@@ -60,12 +60,52 @@ nav{
         
                 padding:90px 0px 15px;
 
+                
+                .active::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: #000000;
+                    opacity: .2;
+                    transition: width .5s ease;
+                    z-index: -1;
+
+                }
+
 
                 li{
                     padding: 5px 2rem;
+                    position: relative;
+                    width: 100%;
+
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 0px;
+                        background-color: #000000;
+                        opacity: .2;
+                        -webkit-transition: width .5s ease;
+                        transition: width .5s ease;
+                        z-index: -1;
+                    }
+
+
+                    
+                    &:hover::before{
+                        width: 100%;
+                    }
+                   
 
                     a{
                         font-size: 18px;
+                       
                     }
                 }
         

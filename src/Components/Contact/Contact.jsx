@@ -1,5 +1,10 @@
 import React from 'react'
 import './contact.scss'
+import {HiLocationMarker} from 'react-icons/hi'
+import {BsFillTelephoneFill} from 'react-icons/bs'
+import {MdEmail} from 'react-icons/md'
+import {GrFacebookOption} from 'react-icons/gr'
+import {AiFillInstagram} from 'react-icons/ai'
 
 const Contact = () => {
   return (
@@ -27,20 +32,20 @@ const Contact = () => {
         <div className="info">
             <ul>
                 <li>
-                    <span>l</span>Shiv Shakti Society Tharad,BK
+                    <span><HiLocationMarker /> </span>Shiv Shakti Society Tharad,BK
                 </li>
 
                 <li>
-                    <span>p</span>  +91 9429584270
+                    <span><BsFillTelephoneFill/></span>  +91 9429584270
                 </li>
 
-                <li><span>e</span>karandave503@gmail.com </li>
+                <li><span><MdEmail /></span>karandave503@gmail.com </li>
             </ul>
         </div>
 
         <div className="social">
-            <a href=""><span>f</span></a>
-            <a href=""><span>i</span></a>
+            <a href=""><span><GrFacebookOption /></span></a>
+            <a href=""><span><AiFillInstagram /></span></a>
         </div>
 
 
