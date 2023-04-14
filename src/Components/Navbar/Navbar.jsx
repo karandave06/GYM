@@ -5,6 +5,7 @@ import {AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
     const [toggle,settoggle] = useState(false);
+    const [active,setactive] = useState(false)
   return (
     <div className='navbar'>
    <nav className='px-10 py-3 flex justify-between items-center'>
@@ -61,9 +62,9 @@ const Navbar = () => {
 
     {/* Responsive design */}
     <ul id='resmenu' className={` bg-black text-white md:hidden fixed 
-    right-0 top-0 flex gap-5 flex-col h-full w-[280px] justify-start items-start   ${toggle ? `right-0` : `right-[-100%]`}`}>
-            <li className={'active'}>
-                  <a  onClick={()=>settoggle(!toggle)} href="#header">Home</a>
+    right-0 top-0 flex gap-5 flex-col h-full w-[260px] justify-start items-start   ${toggle ? `right-0` : `right-[-100%]`}`}>
+            <li >
+                  <a onClick={()=>settoggle(!toggle)} href="#header">Home</a>
             </li>
 
             <li>
