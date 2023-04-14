@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 
 const Shadule = () => {
   useEffect(()=>{
-    Aos.init({duration:3000})
+    Aos.init({duration:1000})
   })
   return (
     <div id='shadule' className='shadule'>
